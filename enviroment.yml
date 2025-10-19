@@ -1,0 +1,18 @@
+name: ge-falls
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - jupyter
+  - pip:
+      - ultralytics
+      - opencv-python
+      - torch  # se instalará la rueda oficial con soporte MPS en macOS
+      - torchvision
+      - mediapipe-silicon   # alternativa optimizada Apple Silicon (opcional)
+      - protobuf>=3.11,<4   # fijar versión si usas mediapipe-silicon
